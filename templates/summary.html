@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Summary</title>
+  </head>
+  <body>
+    <h1>Summary</h1>
+    <ol>
+      {% for summary in summaries %}
+      <li>{{ summary }}</li>
+      {% endfor %}
+    </ol>
+    <a href="{{ url_for('index') }}">Summarize another link</a>
+  </body>
+</html>
